@@ -1,17 +1,15 @@
+### Objectif du test: 
+
 Le test implique d'entraîner un modèle et de créer une application qui utilisera ce modèle pour servir des utilisateurs non-techniques.
 
-Le problème décrit est de type classification. Il s'agit de datasets
-tirés du marché réel avec toutes les implications que cela suppose
-(bruit dans la donnée, valeurs manquantes, mais aussi confidentialité,
-etc.).
-Un composant crucial du test est le choix de la métrique pour évaluer
-votre modèle.
-Vous devez prévoir de justifier votre choix dans la réponse que vous
-fournirez.
+Le problème décrit est de type classification. Il s'agit de datasets tirés du marché réel avec toutes les implications que cela suppose (bruit dans la donnée, valeurs manquantes, mais aussi confidentialité, etc.).
+Un composant crucial du test est le choix de la métrique pour évaluer votre modèle.
+Vous devez prévoir de justifier votre choix dans la réponse que vous fournirez.
 Une fois que vous aurez finalisé le modèle, créer une application Flask pour utiliser ce modèle. L'application affichera un formulaire où un utilisateur pourra rentrer des valeurs de même nature que le dataset que nous mettons à votre disposition, et l'application lui retournera son inférence.
 L'application acceptera aussi un fichier CSV et Excel avec le même schème que le dataset de test, et rendra un tableau de résultats d'inférence du modèle.
 
-#Dataset
+### Dataset
+
 Le fichier comporte une base de train et de test. Elles comportent
 l'historique de pubs (ad_id, format) affichées sur des applications
 mobiles (support_type, support_id) à un utilisateur (user_id, device_id,
@@ -52,10 +50,7 @@ viewability: pourcentage de visibilité (-1 si inconnu)
 position: position de l'ad sur la page
 
 
-L'objectif est de trouver les probabilités pour la colonne clicked,
-omise à dessein. La réponse au test est le code que vous avez écrit pour
-trouver ces probabilités.
+#### L'objectif est de trouver les probabilités pour la colonne clicked, omise à dessein. La réponse au test est le code que vous avez écrit pour trouver ces probabilités.
 
-
-Le dataset est localisé à l’emplacement suivant:
+#### Le dataset est localisé à l’emplacement suivant:
 https://www.dropbox.com/s/9jmpk7jtvnqzcto/data.tar.gz?dl=1
